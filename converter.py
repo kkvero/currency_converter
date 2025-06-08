@@ -45,6 +45,3 @@ def convert(amount: float, route: str) -> float:
         intermediate = amount * rate1
         rate2 = get_rate(parts[1], parts[2])
         return round_result(intermediate * rate2)
-
-    # else:
-    # raise ValueError("Invalid route format")
